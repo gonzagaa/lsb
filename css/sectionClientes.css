@@ -75,12 +75,12 @@
   }
   
   #clientes .slide-text {
-    animation: slide 25s infinite linear;
+    animation: slide 65s infinite linear;
     display: flex;
   }
 
   #clientes .slide.dois .slide-text {
-    animation: slideDois 25s infinite linear;
+    animation: slideDois 65s infinite linear;
   }
   
   #clientes .slide-text img {
@@ -91,7 +91,7 @@
     filter: brightness(0) invert(100%);
     opacity: .4;
 
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
 
   #clientes .slide-text img:hover {
