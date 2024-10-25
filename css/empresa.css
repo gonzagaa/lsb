@@ -1,0 +1,86 @@
+#empresa {
+    background: var(--black-700);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#empresa .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#empresa header {
+    margin-bottom: 4rem;
+}
+
+#empresa header h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+#empresa header h3 {
+    color: #dfdfdf;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+#empresa header p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #7d7d7d;
+}
+
+#empresa .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#empresa .images img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#empresa .images.grid-cell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#empresa .images.grid-cell img {
+    border-radius: 0;
+}
+
+@media (min-width: 1080px) {
+    section#empresa header {
+        margin-top: 5rem;
+        width: 70%;
+        margin-bottom: 7rem;
+    }
+
+    section#empresa header h2 {
+        font-size: 5rem;
+    }
+
+    section#empresa header h3 {
+        font-size: 2rem;
+    }
+
+    section#empresa .wrapper.portfolio {
+        width: min(212rem, 100%);
+        padding-inline: 3rem;
+    }
+
+    section#empresa .images.grid-cell {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+}

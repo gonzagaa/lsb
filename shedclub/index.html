@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSB Digital - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../assets/ICONE LSB.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+        <div class="wrapper">
+
+            <a class="logo" href="../index.html">
+                <img  src="../assets/Logo LSB NOVA.svg" alt="Logo LSB Digital">
+            </a>
+            
+            <div class="menu">
+
+                <ul>
+                    <li><a onclick="closeMenu()" href="../index.html">Home</a></li>
+                    <li><a onclick="closeMenu()" href="../index.html#services">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="../index.html#clientes">Portfólio</a></li>
+                </ul>
+ 
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>       
+    </nav>
+
+    <section id="empresa">
+        <div class="wrapper">
+            <header>
+                <h2>ShedClub</h2>
+                <h3>O que fizemos por essa empresa?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, facilis consequatur, id quo fugit quibusdam ab harum tenetur cupiditate quidem nostrum adipisci officia quod culpa dicta reiciendis molestiae quos iste?</p>
+            </header>
+        </div>
+
+        <div class="wrapper portfolio">
+            <div class="images grid-cell">
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-1.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-2.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-3.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-4.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-5.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-6.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-7.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-8.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-9.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-10.webp" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../assets/shedclub/mockup template-11.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+
+    <script>
+        // Impede o clique com o botão direito e exibe um alerta
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Bloqueia o menu de contexto (clique com o botão direito)
+            alert("Alerta: Conteúdo Protegido!");
+        });
+    </script>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script>
+        // Initialize Lenis with options
+        const lenis = new Lenis({
+        smooth: true,            // Ativa o scroll suave
+        duration: 1.1,           // Define a duração do scroll (maior valor deixa mais lento)
+        easing: (t) => 1 - Math.pow(1 - t, 4) // Função de easing para suavidade
+        });
+
+        // Listen for the scroll event and log the event data
+        lenis.on('scroll', (e) => {
+        console.log(e);
+        });
+
+        // Use requestAnimationFrame to continuously update the scroll
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSB Digital - Agência de Marketing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./assets/ICONE LSB.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/40e1b7901b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+</head>
+<body>
+    
+    <nav id="navigation" class="">
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img  src="./assets/Logo LSB NOVA.svg" alt="Logo LSB Digital">
+            </a>
+            
+            <div class="menu">
+
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="#clientes">Portfólio</a></li>
+                </ul>
+ 
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>       
+    </nav>
+
+    <header class="header" id="home">
+        <div class="blush um"></div>
+        <div class="blush dois"></div>
+        <div class="eclipse"><img src="./assets/ECLIPSE VERDE.svg" alt=""></div>
+        
+        <img class="paises" src="./assets/PAISES (1).png" alt="">
+        
+        <div class="wrapper">
+           <div class="content">
+                <img data-aos="fade-up" class="logo" src="./assets/Logo LSB NOVA.svg" alt="">
+                <h1 data-aos="fade-up-right">Construímos estratégias que alavancam sua <span>visibilidade</span></h1>
+                <a data-aos="fade-up-right" href="#services"><ion-icon name="arrow-down-outline"></ion-icon></a>
+           </div>
+
+            <div class="result turbinada">
+                <img src="./assets/icones/icone turbinada.png" alt="">
+                <p>Publicação <span>turbinada!</span></p>
+            </div>
+
+            <div class="result comentarios">
+                <img src="./assets/icones/icone comentarios.png" alt="">
+                <p><span>+347</span> comentários</p>
+            </div>
+
+            <div class="result alcancadas">
+                <img src="./assets/icones/icone alcancadas.png" alt="">
+                <p><span>+ 39 mil</span> contas alcançadas</p>
+            </div>
+
+            <div class="result curtidas">
+                <img src="./assets/icones/icone curtidas.png" alt="">
+                <p><span>+5 mil</span> curtidas</p>
+            </div>
+        </div>
+
+        <img class="circle" src="./assets/Shape Divider.svg" alt="">
+    </header>
+
+    <section id="portfolio">
+        <div class="wrapper">
+            <div class="cards">
+                <a data-aos="fade-up" href="./damatta/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa damatta.webp" alt="">
+    
+                        <div class="text">
+                            <h3>Damatta Engenharia</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./mgc/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa mgc.webp" alt="">
+    
+                        <div class="text">
+                            <h3>MGC Madeireira</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./lehom/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa lehom.webp" alt="">
+    
+                        <div class="text">
+                            <h3>Lehom</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./adubocaraja/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa adubo.webp" alt="">
+    
+                        <div class="text">
+                            <h3>Adubo Carajá</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./shedclub/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa shed.webp" alt="">
+    
+                        <div class="text">
+                            <h3>ShedClub</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up"  href="./bbs/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa bbs.webp" alt="">
+    
+                        <div class="text">
+                            <h3>BBS</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./r1engenharia/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa r1.webp" alt="">
+    
+                        <div class="text">
+                            <h3>R1 Engenharia</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-aos="fade-up" href="./furtadoeresende/index.html">
+                    <div class="card">
+                        <img class="bg" src="./assets/capas/capa furtado e resende.webp" alt="">
+    
+                        <div class="text">
+                            <h3>Furtado & Resende</h3>
+                            <p>Goiânia, GO.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h2>Serviços</h2>
+            </header>
+
+            <div class="cards">
+                <div data-aos="fade-up" class="card">
+                    <span>01</span>
+                    <h3>Seo</h3>
+                    <p>Alcance o topo das pesquisas com estratégias que aumentam a visibilidade da sua marca e trazem mais tráfego orgânico.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>02</span>
+                    <h3>Tráfego</h3>
+                    <p>Aumente suas conversões com anúncios que alcançam seu público em toda a internet, maximizando seus resultados.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>03</span>
+                    <h3>Gerenciamento</h3>
+                    <p>Gerenciamos suas redes sociais de forma estratégica, atraindo mais engajamento e profissionalizando sua marca.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>04</span>
+                    <h3>Landing Page</h3>
+                    <p>Landing pages otimizadas para converter visitantes em clientes, gerando mais oportunidades para seu negócio.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>05</span>
+                    <h3>Site Institucional</h3>
+                    <p>Sites profissionais que fortalecem a presença digital da sua empresa e a posicionam no mercado de forma sólida.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>06</span>
+                    <h3>E-commerce</h3>
+                    <p>Expanda suas vendas com um e-commerce funcional, levando sua loja para o mundo digital de forma eficiente.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+
+                <div data-aos="fade-up" class="card">
+                    <span>06</span>
+                    <h3>Aplicativos</h3>
+                    <p>Desenvolvemos aplicativos personalizados que conectam sua empresa diretamente ao público, aumentando a interação.</p>
+                    <a href="#"><button>Faça um orçamento</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="time">        
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Nossa equipe</h2>
+                </header>
+
+                <div class="swiper mySwiper">
+                    <div class="carrossel swiper-wrapper">
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/mateusaquino.jpg" alt="">
+                            <h3>Mateus Aquino</h3>
+                            <p>Diretor</p>
+                        </div>
+    
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/luca.jpg" alt="">
+                            <h3>Luca Naves</h3>
+                            <p>Diretor Comercial</p>
+                        </div>
+    
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/rafael reis.jpg" alt="">
+                            <h3>Rafael Reis</h3>
+                            <p>Gestor de Tráfego</p>
+                        </div>
+    
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/gustavogonzaga.jpg" alt="">
+                            <h3>Gustavo Gonzaga</h3>
+                            <p>Desenvolvedor</p>
+                        </div>
+    
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/Imagem do WhatsApp de 2024-03-22 à(s) 14.43.32_3f721516.jpg" alt="">
+                            <h3>Mikael</h3>
+                            <p>Designer</p>
+                        </div>
+    
+                        <div class="pessoa swiper-slide">
+                            <img src="./assets/nosso time/Isabella Mendes.jpg" alt="">
+                            <h3>Isabella Mendes</h3>
+                            <p>Editora de Videos</p>
+                        </div>
+                    </div>
+                    
+                    <svg class="swiper-button-next"  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow"><path fill="#d8d8d8" d="m-210.9-289-2-2 11.8-11.7-11.8-11.7 2-2 13.8 13.7-13.8 13.7" transform="translate(237 335)"></path></svg>
+                    <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="arrow"><path fill="#d8d8d8" d="M37.9 46 24.1 32.3l13.8-13.7 2 2-11.8 11.7L39.9 44l-2 2"></path></svg>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Clientes</h2>
+                </header>
+
+                <div class="slide um">
+                    <div class="slide-text">
+                        <img src="./assets/ClientesColorido/agil.webp" alt="">
+                        <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
+                        <img src="./assets/ClientesColorido/eliar.webp" alt="">
+                        <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
+                        <img src="./assets/ClientesColorido/janyne de sa.webp" alt="">
+                        <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
+                        <img src="./assets/ClientesColorido/r1 engenharia.webp" alt="">
+                        <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
+                        <img src="./assets/ClientesColorido/vaultch.webp" alt="">
+                    </div>
+                    <div class="slide-text">
+                        <img src="./assets/ClientesColorido/agil.webp" alt="">
+                        <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
+                        <img src="./assets/ClientesColorido/eliar.webp" alt="">
+                        <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
+                        <img src="./assets/ClientesColorido/janyne de sa.webp" alt="">
+                        <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
+                        <img src="./assets/ClientesColorido/r1 engenharia.webp" alt="">
+                        <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
+                        <img src="./assets/ClientesColorido/vaultch.webp" alt="">
+                    </div>
+                </div>
+                <div class="slide dois">
+                    <div class="slide-text">
+                        <img src="./assets/ClientesColorido/vaultch.webp" alt="">
+                        <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
+                        <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
+                        <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
+                        <img src="./assets/ClientesColorido/eliar.webp" alt="">
+                        <img src="./assets/ClientesColorido/r1 engenharia.webp" alt="">
+                        <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
+                        <img src="./assets/ClientesColorido/agil.webp" alt="">
+                        <img src="./assets/ClientesColorido/janyne de sa.webp" alt="">
+                    </div>
+                    <div class="slide-text">
+                        <img src="./assets/ClientesColorido/vaultch.webp" alt="">
+                        <img src="./assets/ClientesColorido/MB CAPITAL.webp" alt="">
+                        <img src="./assets/ClientesColorido/sergioaidar.webp" alt="">
+                        <img src="./assets/ClientesColorido/bw boutique.webp" alt="">
+                        <img src="./assets/ClientesColorido/eliar.webp" alt="">
+                        <img src="./assets/ClientesColorido/r1 engenharia.webp" alt="">
+                        <img src="./assets/ClientesColorido/furtado e resende.webp" alt="">
+                        <img src="./assets/ClientesColorido/agil.webp" alt="">
+                        <img src="./assets/ClientesColorido/janyne de sa.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="wrapper">
+            <div class="content">
+                <div class="content-box">
+                    <header>
+                        <span>FALE CONOSCO</span>
+                        <h2>Você está pronto?</h2>
+                    </header>
+    
+                    <div class="text">
+                        <p>Se você está pronto para se alavancar no mundo digital, fale com nosso time hoje mesmo. 
+                        Seja o líder do seu setor e vamos juntos construir a presença online que você merece.</p>
+
+                        <div class="results">
+                            <div class="result turbinada">
+                                <img src="./assets/icones/icone turbinada.png" alt="">
+                                <p>Publicação <span>turbinada!</span></p>
+                            </div>
+        
+                            <div class="result comentarios">
+                                <img src="./assets/icones/icone comentarios.png" alt="">
+                                <p><span>+347</span> comentários</p>
+                            </div>
+        
+                            <div class="result alcancadas">
+                                <img src="./assets/icones/icone alcancadas.png" alt="">
+                                <p><span>+ 39 mil</span> contas alcançadas</p>
+                            </div>
+        
+                            <div class="result curtidas">
+                                <img src="./assets/icones/icone curtidas.png" alt="">
+                                <p><span>+5 mil</span> curtidas</p>
+                            </div>
+                        </div>
+    
+                        <a target="_blank" href="https://wa.link/ge6c2z">
+                            <button>
+                                <ion-icon name="logo-whatsapp"></ion-icon> Entrar em contato
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="./assets/MULHER.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="blush"></div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/Logo LSB NOVA.svg" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#time">Time</a></p>
+                    <p><a href="#clientes">Clientes</a></p>
+                    <p><a href="#contato">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Conecte-se conosco</h3>
+                    <p>Brookfield Towers Av. Dep. Jamel Cecílio, R. 56 - Sala - 815A - Jardim Goiás, Goiânia - GO</p>
+                    <p>lsbagenciadigital@gmail.com</p>
+                    <p><a target="_blank" href="tel:+55-62-99213-6521">(62) 99213-6521</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href="https://wa.link/ge6c2z"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/lsbdigital/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - LSB DIGITAL</p>
+
+                <a target="_blank" href="https://instagram.com/gonzxgx">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="./assets/GustavoGonzaga Logo Small.svg" alt="">
+                        Gustavo Gonzaga
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="https://wa.link/ge6c2z">
+        <img src="./assets/whatsapp logo.webp" alt="">
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        // Impede o clique com o botão direito e exibe um alerta
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Bloqueia o menu de contexto (clique com o botão direito)
+            alert("Alerta: Conteúdo Protegido!");
+        });
+    </script>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script>
+        // Initialize Lenis with options
+        const lenis = new Lenis({
+        smooth: true,            // Ativa o scroll suave
+        duration: 1.1,           // Define a duração do scroll (maior valor deixa mais lento)
+        easing: (t) => 1 - Math.pow(1 - t, 4) // Função de easing para suavidade
+        });
+
+        // Listen for the scroll event and log the event data
+        lenis.on('scroll', (e) => {
+        console.log(e);
+        });
+
+        // Use requestAnimationFrame to continuously update the scroll
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+</body>
+</html> 

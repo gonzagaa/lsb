@@ -1,0 +1,50 @@
+
+#author {
+    overflow: hidden;
+    background: #000;
+    width: 100%;
+    padding: 2rem;
+}
+
+#author .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    gap: 2rem;
+}
+
+#author .content p {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+}
+
+#author .content a {
+    text-decoration: none;
+}
+
+#author .content a:hover p.author {
+    color: #fff;
+    cursor: pointer;
+}
+
+#author .content p.author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    transition: all 200ms ease-in-out;
+}
+
+#author .content img {
+    width: 3rem;
+}
+
+@media (min-width: 1080px) {
+    #author .wrapper .content {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+}

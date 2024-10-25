@@ -1,0 +1,191 @@
+#contato {
+    background: var(--black-700);
+    overflow: hidden;
+    position: relative;
+}
+
+#contato .blush {
+  width: 1500px;
+  height: 1500px;
+  background: radial-gradient(#ffffff, transparent 50%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  bottom: -80rem;
+  left: -80rem;
+  opacity: .07;
+
+  animation: moveblush infinite 4s linear;
+}
+
+#contato header span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+  
+    font-family: var(--interV);
+  
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  #contato header {
+    position: relative;
+    text-align: left;
+  }
+  
+  #contato h2 {
+    font-size: 3rem;
+    color: var(--color-text);
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  #contato .text {
+    text-align: left;
+  }
+  
+  #contato .text p {
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #d4d4d4 0%, #7a7a7a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--interV);
+    font-weight: 500;
+
+    margin-bottom: 1.5rem;
+  }
+
+  #contato .results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #contato .result {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: .4rem;
+    align-items: center;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(45, 45, 45, 0.541);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.041);
+    padding: 1rem;
+    width: max-content;
+    opacity: .9;
+
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+
+
+    box-shadow:  14px 14px 28px #0a0a0a,
+             -14px -14px 28px #0c0c0c;
+  }
+
+  #contato .result p {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: var(--interV);
+  }
+
+  #contato .result img {
+    margin-top: -1rem;
+  }
+
+  #contato .result p span {
+    font-weight: 800;
+  }
+
+  #contato .text a {
+    text-decoration: none;
+  }
+
+  #contato .text a button {
+    border: none;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #000;
+    background: linear-gradient(to right, #dcdcdc 30%, #5a5a5a);
+    border-radius: 1rem;
+
+    transition: all 300ms ease-in-out;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #contato .text a button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    box-shadow:  20px 20px 60px #14141447,
+             -20px -20px 60px #1f1f1f53;
+  }
+
+  #contato .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contato .image img {
+    margin-top: 7rem;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 96%);
+    animation: personagem 30s linear infinite;
+  }
+
+  @keyframes personagem {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    50% {
+      transform: scale(1.1) translate(0, 50px);
+    }
+    100% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
+@media (min-width: 1080px) {
+
+    section#contato span {
+        font-size: 1.4rem;
+    }
+
+    section#contato h2 {
+        font-size: 4rem;
+    }
+
+    section#contato .content p {
+        font-size: 2rem;
+    }
+
+    section#contato .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-template-areas: "A B";
+        gap: 8rem;
+    }
+
+    section#contato .content .image img {
+        width: 80%;
+    }
+
+    section#contato .result p {
+      font-size: 1.2rem;
+    }
+
+    section#contato .content .image {
+        display: flex;
+        justify-content: start;
+        grid-area: A;
+    }
+}
